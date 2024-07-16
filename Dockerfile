@@ -1,5 +1,5 @@
 # Dockerfile para a aplicação Next.js
-FROM node:18-alpine
+FROM node:20.15.1-alpine
 
 # Define o diretório de trabalho no container
 WORKDIR /app
