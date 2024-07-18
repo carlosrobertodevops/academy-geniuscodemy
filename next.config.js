@@ -5,13 +5,5 @@ module.exports = {
   },
   images: {
     domains: ['utfs.io', 'img.clerk.com'],
-    // remotePatterns: [
-    //   {
-    //     protocol: 'https',
-    //     hostname: 'img.clerk.com',
-    //     port: '',
-    //     pathname: '',
-    //   },
-    // ],
   },
 };
