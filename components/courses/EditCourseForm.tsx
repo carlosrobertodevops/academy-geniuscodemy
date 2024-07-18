@@ -67,7 +67,7 @@ const EditCourseForm = ({
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      title: course.title,
+      title: course.title || "",
       subtitle: course.subtitle || "",
       description: course.description || "",
       categoryId: course.categoryId,
