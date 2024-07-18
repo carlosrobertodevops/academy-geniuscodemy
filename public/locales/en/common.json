@@ -1,6 +1,9 @@
 {
+  "button": "Botão",
   "description": "Empowering minds, shaping future",
+  "error-useFormField": "useFormField should be used within <FormField>",
   "submit": "Submit",
   "title": "Tech Vision Academy",
-  "welcome": "Welcome"
+  "welcome": "Welcome",
+  "error-Something-went-wrong":"Something went wrong!"
 }

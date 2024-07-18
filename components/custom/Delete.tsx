@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Button } from "../ui/button";
+import { useTranslation } from 'react-i18next';
 
 interface DeleteProps {
   item: string;
@@ -25,6 +26,7 @@ interface DeleteProps {
 const Delete = ({ item, courseId, sectionId }: DeleteProps) => {
   const router = useRouter();
   const [isDeleting, setIsDeleting] = useState(false);
+  const { t } = useTranslation('common');
 
   const onDelete = async () => {
     try {

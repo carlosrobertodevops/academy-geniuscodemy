@@ -4,17 +4,14 @@ import { UserButton, useAuth } from "@clerk/nextjs";
 import { Menu, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  SheetTrigger
 } from "@/components/ui/sheet";
 
 const Topbar = () => {
@@ -96,7 +93,7 @@ const Topbar = () => {
                   </Link>
                 ))}
               </div>
-              
+
               {pathName.startsWith("/instructor") && (
                 <div className="flex flex-col gap-4">
                   {sidebarRoutes.map((route) => (
